@@ -1,21 +1,10 @@
-# BASE IMAGE
+# Base image
+FROM python:3-slim AS build-env
+COPY . /app
+WORKDIR /app
 
-FROM ubuntu AS build
-
-RUN apt-get update && apt-get install -y golang-go
-
-ENV GO111MODULE=off
-
-COPY . .
-
-RUN CGO_ENABLED=0 go build -o /app .
-
-#By using distroless image
-
-FROM scratch
-
-# Copy the compiled binary from the build stage
-COPY --from=build /app /app
-
-# Set the entrypoint for the container to run the binary
-ENTRYPOINT ["/app"]
+# Distroless image
+FROM gcr.io/distroless/python3
+COPY --from=build-env /app /app
+WORKDIR /app
+CMD ["calc.py", "/etc"]
