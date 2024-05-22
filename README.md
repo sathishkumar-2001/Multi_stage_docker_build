@@ -12,3 +12,10 @@ it's not like we must use only two stages it can go upto n build stages based on
 Distroless images offer a streamlined, secure, and efficient way to deploy applications in containers.
 By focusing only on the essentials, distroless images minimize the attack surface, reduce image size, and improve performance,
 making them an excellent choice for production deployments and environments where security and efficiency are crucial.
+
+Here i added the screenshots of the images
+ 1) without using Multi stage images,
+    ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/e68a9f6b-7361-4900-b9f1-c4cf5011fcba)
+    
+
+    ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/65de0ec0-8db6-4630-b445-aef8b7ef0861)
