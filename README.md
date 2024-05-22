@@ -15,7 +15,18 @@ making them an excellent choice for production deployments and environments wher
 
 Here i added the screenshots of the images
  1) without using Multi stage images,
+    
     ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/e68a9f6b-7361-4900-b9f1-c4cf5011fcba)
     
 
     ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/65de0ec0-8db6-4630-b445-aef8b7ef0861)
+ 2) By using Multi stage docker build,
+
+    ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/be080670-8009-4118-b440-503f7488a2a2)
+
+    ![image](https://github.com/sathishkumar-2001/Multi_stage_docker_build/assets/126504329/aed1836b-293f-4219-8df8-a1bf5899df9e)
+
+we can clearly see the magic of how much the image size has been reduced and also the time taken to build the image also decreases when 
+you are using the Multi stage docker build .
+
+
